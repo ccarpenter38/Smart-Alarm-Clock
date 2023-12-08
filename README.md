@@ -35,7 +35,7 @@ If the user decides to click on See Alarm from the main menu, they will be broug
 The final option from the main menu is unlock, which is used when the user had their phone locked in the drawer in the box. This is to be used in case of emergency, but the user can scroll through digits 0-9 using the RPG and click the button to enter their four digit password, and a correct entry will unlock the drawer in teh back using a servo. A back arrow can be used to return to the main menu. The other way to unlock the drawer in the back is to click the RPG pushbutton when an alarm is sounding to turn the alarm  off, which will also unlock ther servo.  
 When the user is on the main menu page and has not pressed the button in 20 seconds, the LCD will enter a rest mode. A light sensor on the top measures the ambient light level, and if there is significant light the LCD displays the pictures from the uSD card, switching the picture every 60 seconds. If the light level is low, the LCD displays a dim picture of a moon. 
 
-<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/90875318/8e6294f1-8559-48ea-b4fd-188b11d456b4" width="300" height="300">
+<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/90875318/8e6294f1-8559-48ea-b4fd-188b11d456b4" width="400" height="300">
 
 The drwer on the back of the Smart Alarm Clock is the perfect size for the a cell phone and has a groove cut out that allows a pushbutton mounted in  the device to determine if there is a phone in the case. If there is phone in the case, the button will be pressed, signaling the servo to lock the mechanism. 
 ## Code
