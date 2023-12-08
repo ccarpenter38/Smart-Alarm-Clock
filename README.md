@@ -123,7 +123,7 @@ Typcally an RGB LED would require series resistances for all LEDS, however becau
 
 | LPC1768 1 | LPC1768 2 |
 | --------- | --------- |
-| p14       | p28       |
+| p14       | p13       |
 | p12       | p30       |
 
 ### MBED2
@@ -142,7 +142,7 @@ Typcally an RGB LED would require series resistances for all LEDS, however becau
 | ------------------ | ---------|
 | Vcc                | Vout     |
 | gnd                |          |
-| RX                 | p13      |
+| RX                 | p28      |
 
 **HS-422 Deluxe Standard Servo**
 
@@ -154,15 +154,25 @@ Typcally an RGB LED would require series resistances for all LEDS, however becau
 
 **SPST NO Button**
 
+| SPST PB   | LPC1768 |
+| --------- | ------- |
+| +         | p24     |
+| -         | gnd     |
 
+Note: This pushbutton is pulled up in software so no external resistor is required.
 
 **5V 2A DC Power Supply**
 
+| Power Supply       | LPC1768  |
+| ------------------ | ---------|
+| +                  | Vin      |
+| -                  | gnd      |
 
+Note this power supply is also used to power the MBED 2 devices using an external power supply.
 
 **MBED 1 Connection**
 
 | LPC1768 1 | LPC1768 2 |
 | --------- | --------- |
-| p14       | p28       |
+| p14       | p13       |
 | p12       | p30       |
