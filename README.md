@@ -39,4 +39,130 @@ The drwer on the back of the Smart Alarm Clock is the perfect size for the a cel
 The device works by running threads on both mbeds to ensure that all tasks can run concurrently. MBED 1 runs 5 threads, while MBED 2 runs three threads. A breakdown of how frequently each thread is run can be seen below.
 ## Hardware Setups
 ### MBED1
+**Rotary Pulse Generator**
+
+| RPG  | LPC1768  |
+| ---- | ---------|
+| A    | p24      |
+| B    | p15      |
+| C    | gnd      |
+| SW   | p16      |
+| +    | Vout     |
+
+**Serial Miniature LCD Module**
+
+| uLCD  | LPC1768  |
+| ----- | ---------|
+| 5V    | VU       |
+| gnd   | gnd      |
+| RX    | p9       |
+| TX    | p10      |
+| RESET | p11      |
+
+**MEMS Microphone Breakout and OpAmp Breakout**
+
+| Microphone  | OpAmp    | LPC1768  |
+| ----------- | ---------| ---------|
+| Vin         |          | VU       |
+| gnd         | gnd      | gnd      |
+| AC          | In       |          |
+|             | Vcc      | Vout     |
+|             | Out      | p20      |
+
+The AC signal from the microphone should be poth pulled up and pulled down using a 10K ohm resistors as shown below.
+
+**Phototransistor**
+
+| Phototransistor  | LPC1768  |
+| ---------------- | ---------|
+| +                | Vout     |
+| -                | p19      |
+
+The negative end of the phototransistor should be pulled down using a 10K ohm resistor as shwon below.
+
+**PCB Mount Speaker and Mono Audio Amp Breakout**
+
+| Speaker  | Audio Amp  | LPC1768  |
+| -------- | -----------| ---------|
+| +        | Out+       |          |
+| -        | Out-       |          |
+|          | In-/Pwr-   | gnd      |
+|          | In+        | p18      |
+|          | Pwr+       | Vout     |
+
+**Triple Output High Power RGB LED**
+
+| LED                   | LPC1768  |
+| --------------------- | ---------|
+| Red+                  | p21      |
+| Green+                | p22      |
+| Blue+                 | p23      |
+| Read-/Green-/Blue-    | gnd      |
+
+Typcally an RGB LED would require series resistances for all LEDS, however because this is a high powered LED, the operating volatages for Blue and Green can take in a 3.3V input directly from the MBED. The Red LED require an operating voltage of 2.2-2.6V so it require a series restsor, and in this porject we used 3 330 Ohm restsors in parallel for an effective resistance of 110 Ohms, which dropped the voltage enough.
+
+**microSD Breakout**
+
+| uSD Card Breakout  | LPC1768  |
+| ------------------ | ---------|
+| CS                 | p8       |
+| DI                 | p5       |
+| VCC                | Vout     |
+| SCK                | p7       |
+| gnd                | gnd      |
+| DO                 | p6       |
+
+**5V 4AA Battery Pack**
+
+| Battery Pack       | LPC1768  |
+| ------------------ | ---------|
+| +                  | Vin      |
+| -                  | gnd      |
+
+**MBED 2 Connection**
+
+| LPC1768 1 | LPC1768 2 |
+| --------- | --------- |
+| p14       | p28       |
+| p12       | p30       |
+
 ### MBED2
+**HUZZAH ESP8266 Breakout**
+
+| HUZZAH ESP8266  | LPC1768  |  External Power Supply |
+| --------------- | -------- | ---------------------- |
+| V+              |          | +5 V >=500 mA          |
+| RX              | p9       |                        |
+| TX              | p10      |                        |
+| gnd             | gnd      | -                      |
+
+**4-Digit 7-Segment Serial Display**
+
+| 4-Digit Display    | LPC1768  |
+| ------------------ | ---------|
+| Vcc                | Vout     |
+| gnd                |          |
+| RX                 | p13      |
+
+**HS-422 Deluxe Standard Servo**
+
+| Servo  | LPC1768  |  External Power Supply |
+| ------ | -------- | ---------------------- |
+| Vin    |          | +5 V >=500 mA          |
+| gnd    | gnd      | -                      |
+| PWM    | p21      |                        |
+
+**SPST NO Button**
+
+
+
+**5V 2A DC Power Supply**
+
+
+
+**MBED 1 Connection**
+
+| LPC1768 1 | LPC1768 2 |
+| --------- | --------- |
+| p14       | p28       |
+| p12       | p30       |
