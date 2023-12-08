@@ -31,23 +31,23 @@ After the setup is done, the Smart Alarm Clock is ready to be used. Upon startin
 
 <img width="620" alt="Screen Shot 2023-12-08 at 1 51 08 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/ba50e1da-4785-41b1-ac70-076873aec259">
 
-If the user clicks down on the rotary pulse generator when selecting Set Alarm, they will be prompted to set an alarm. The first step is to set the time of the alarm, beginning with the hours. The user can cycle through 1-12 hours alternatiung between AM and PM. After clicking on the RPG after setting the desire hour, the user can the switch the minute selected by again spinning the RPG. Clicking again will bring the suer to the sounds configuration page.  
+If the user clicks down on the rotary pulse generator when selecting Set Alarm, they will be prompted to set an alarm. The first step is to set the time of the alarm, beginning with the hours. The user can cycle through 1-12 hours alternating between AM and PM. After clicking on the RPG after setting the desired hour, the user can switch the minute selected by again spinning the RPG. Clicking again will bring the user to the sounds configuration page.  
 
 <img width="613" alt="Screen Shot 2023-12-08 at 1 51 50 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/263df5d0-f03b-4b54-b5fe-88f05e363a97">
 
-For the sounds configuration page, there are again three options that can be selected the same way. The BEEP option plays a simple tone that beeps for two seconds and waits for one second on repeat. The BIRDS option plays a .wav file of birds chirping. The CUSTOM option prompts the user to speak or sing into the microphone on the top of the box with a countdown for how much recording time is remaining. This recorded audio is what will be played if CUSTOM is selected. After a sound is selected, the user can choose what color they want displayted by the high power RGB LED on top of the alarm clock.  
+For the sounds configuration page, there are again three options that can be selected the same way. The BEEP option plays a simple tone that beeps for two seconds and waits for one second on repeat. The BIRDS option plays a .wav file of birds chirping. The CUSTOM option prompts the user to speak or sing into the microphone on the top of the box with a countdown for how much recording time is remaining. This recorded audio is what will be played if CUSTOM is selected. After a sound is selected, the user can choose what color they want displayed by the high-power RGB LED on top of the alarm clock.  
 
 <img width="594" alt="Screen Shot 2023-12-08 at 1 52 02 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/7d234907-ef76-48e1-bd57-3316aa616c0e">
 
-To set the color, start turing the RPG clockwise. A blue box will start appearing on the screen, which indicates the blue level desired from the LED. Once the user has decided they want that level, they can click the RPG to switch to modifying green, and the square will update to show what the color will look like with the added green. This is repeated for red, and once complete means that the alarm is set, and will deafult to being on. 
+To set the color, start turning the RPG clockwise. A blue box will start appearing on the screen, which indicates the blue level desired from the LED. Once the user has decided they want that level, they can click the RPG to switch to modifying green, and the square will update to show what the color will look like with the added green. This is repeated for red and once complete means that the alarm is set, and will default to being on. 
 
 <img width="619" alt="Screen Shot 2023-12-08 at 1 52 15 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/98409402-104c-49ef-b4af-b98461cf22ba">
 
-If the user decides to click on See Alarm from the main menu, they will be brought a screen where they can scroll through all alarms swet using the RPG, with the final option being a return to main menu. These screens show all of the chosen values for each alarm, and clicking the RPG pushbutton while on an alarm in this screen will toggle the alarm on and off.  
+If the user decides to click on See Alarm from the main menu, they will be brought to a screen where they can scroll through all alarms set using the RPG, with the final option being a return to the main menu. These screens show all of the chosen values for each alarm, and clicking the RPG pushbutton while on an alarm in this screen will toggle the alarm on and off.  
 
 <img width="572" alt="Screen Shot 2023-12-08 at 1 52 26 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/19abc4d5-ece8-4a85-9e3c-ef9e5bac1fac">
 
-The final option from the main menu is unlock, which is used when the user had their phone locked in the drawer in the box. This is to be used in case of emergency, but the user can scroll through digits 0-9 using the RPG and click the button to enter their four digit password, and a correct entry will unlock the drawer in teh back using a servo. A back arrow can be used to return to the main menu. The other way to unlock the drawer in the back is to click the RPG pushbutton when an alarm is sounding to turn the alarm  off, which will also unlock ther servo. 
+The final option from the main menu is unlocked, which is used when the user has their phone locked in the drawer in the box. This is to be used in case of emergency, but the user can scroll through digits 0-9 using the RPG and click the button to enter their four-digit password, and a correct entry will unlock the drawer in the back using a servo. A back arrow can be used to return to the main menu. The other way to unlock the drawer in the back is to click the RPG pushbutton when an alarm is sounding to turn the alarm  off, which will also unlock the servo. 
 
 <img width="604" alt="Screen Shot 2023-12-08 at 1 52 46 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/209d4543-71f7-49fd-b966-043ef1d0bbed">
 
@@ -55,7 +55,8 @@ When the user is on the main menu page and has not pressed the button in 20 seco
 
 <img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/90875318/8e6294f1-8559-48ea-b4fd-188b11d456b4" width="400" height="300">
 
-The drawer on the back of the Smart Alarm Clock is the perfect size for the a cell phone and has a groove cut out that allows a pushbutton mounted in  the device to determine if there is a phone in the case. If there is phone in the case, the button will be pressed, signaling the servo to lock the mechanism. 
+The drawer on the back of the Smart Alarm Clock is the perfect size for the a cell phone and has a groove cut out that allows a pushbutton mounted in  the device to determine if there is a phone in the case. If there is a phone in the case, the button will be pressed, signaling the servo to lock the mechanism. 
+
 ## Code
 The device works by running threads on both mbeds to ensure that all tasks can run concurrently. MBED 1 runs five threads, while MBED 2 runs four threads. A breakdown of how frequently each thread is run can be seen below.  
 
