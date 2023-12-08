@@ -50,6 +50,9 @@ The device works by running threads on both mbeds to ensure that all tasks can r
 <img width="357" alt="Screen Shot 2023-12-08 at 12 38 55 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/11c2f192-563c-4d64-ba38-c9cf73359d57">
 
 ## Hardware Setups
+
+<img width="546" alt="Screen Shot 2023-12-08 at 1 25 24 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/89199bab-02c8-4378-8463-f369caba0421">
+
 ### MBED1
 **Rotary Pulse Generator**
 
