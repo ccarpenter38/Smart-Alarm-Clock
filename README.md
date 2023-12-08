@@ -38,9 +38,11 @@ The drwer on the back of the Smart Alarm Clock is the perfect size for the a cel
 ## Code
 The device works by running threads on both mbeds to ensure that all tasks can run concurrently. MBED 1 runs five threads, while MBED 2 runs three threads. A breakdown of how frequently each thread is run can be seen below.
 **MBED 1**
+
 <img width="335" alt="Screen Shot 2023-12-08 at 12 39 14 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/007ca7da-11da-4f10-8333-8bc1da9084e0">
 
 **MBED 2**
+
 <img width="357" alt="Screen Shot 2023-12-08 at 12 38 55 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/11c2f192-563c-4d64-ba38-c9cf73359d57">
 
 ## Hardware Setups
