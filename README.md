@@ -36,7 +36,8 @@ The final option from the main menu is unlock, which is used when the user had t
 When the user is on the main menu page and has not pressed the button in 20 seconds, the LCD will enter a rest mode. A light sensor on the top measures the ambient light level, and if their is significant light the LCD displays the pictures from the uSD card, switching the picture every 60 seconds. If the light level is low, the LCD displays a dim picture of a moon. 
 The drwer on the back of the Smart Alarm Clock is the perfect size for the a cell phone and has a groove cut out that allows a pushbutton mounted in  the device to determine if there is a phone in the case. If there is phone in the case, the button will be pressed, signaling the servo to lock the mechanism. 
 ## Code
-The device works by running threads on both mbeds to ensure that all tasks can run concurrently. MBED 1 runs five threads, while MBED 2 runs three threads. A breakdown of how frequently each thread is run can be seen below.
+The device works by running threads on both mbeds to ensure that all tasks can run concurrently. MBED 1 runs five threads, while MBED 2 runs three threads. A breakdown of how frequently each thread is run can be seen below.  
+
 **MBED 1**
 
 <img width="335" alt="Screen Shot 2023-12-08 at 12 39 14 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/007ca7da-11da-4f10-8333-8bc1da9084e0">
@@ -79,14 +80,18 @@ The device works by running threads on both mbeds to ensure that all tasks can r
 
 The AC signal from the microphone should be poth pulled up and pulled down using a 10K ohm resistors as shown below.
 
+<img width="171" alt="Screen Shot 2023-12-08 at 12 45 40 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/4580bef6-8545-4162-9169-781c9b832bcc">
+
 **Phototransistor**
 
 | Phototransistor  | LPC1768  |
 | ---------------- | ---------|
 | +                | Vout     |
-| -                | p19      |
+| -                | p19      |  
 
-The negative end of the phototransistor should be pulled down using a 10K ohm resistor as shwon below.
+The negative end of the phototransistor should be pulled down using a 10K ohm resistor as shwon below.  
+
+<img width="175" alt="Screen Shot 2023-12-08 at 12 46 08 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/ded4e6f0-fd33-4230-b9b6-083067942778">
 
 **PCB Mount Speaker and Mono Audio Amp Breakout**
 
