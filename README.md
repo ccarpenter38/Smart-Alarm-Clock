@@ -80,7 +80,7 @@ The device works by running threads on both mbeds to ensure that all tasks can r
 
 The AC signal from the microphone should be poth pulled up and pulled down using a 10K ohm resistors as shown below.
 
-<img width="171" alt="Screen Shot 2023-12-08 at 12 45 40 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/4580bef6-8545-4162-9169-781c9b832bcc">
+<img width="187" alt="Screen Shot 2023-12-08 at 12 47 00 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/e021806f-337e-488f-ab57-30c2e9a27c0e">
 
 **Phototransistor**
 
