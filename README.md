@@ -154,7 +154,7 @@ Typcally an RGB LED would require series resistances for all LEDS, however becau
 | 4-Digit Display    | LPC1768  |
 | ------------------ | ---------|
 | Vcc                | Vout     |
-| gnd                |          |
+| gnd                | gnd      |
 | RX                 | p28      |
 
 **HS-422 Deluxe Standard Servo**
