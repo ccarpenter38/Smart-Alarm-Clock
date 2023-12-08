@@ -217,4 +217,12 @@ Note this power supply is also used to power the MBED 2 devices using an externa
 | p14       | p13       |
 | p12       | p30       |
 
+## Demo Videos
+
+Setting an Alarm Demo:
+[video 1](https://drive.google.com/file/d/1sJxIeqUyP5fu4LBwo-2lf7tZrY6E-ny0/view?usp=sharing)
+
+Phone Locker Mechanism Demo:
+[video 2](https://drive.google.com/file/d/17AVaVWaXrk-4vGk74OYk3q7ySkX-VpAk/view?usp=sharing)
+
 
