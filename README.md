@@ -29,27 +29,27 @@ Another thing up to the user are the pictures, sounds, and passwords used by the
 The user should also configure the code in mbed2/main.cpp function setup() to connect to the internet through their phone hotspot by changing the code starting at line 187 to include their network name and password.
 After the setup is done, the Smart Alarm Clock is ready to be used. Upon starting, the two mbeds will boot up and start initializing hardware and network connections. Once these are initialized, the 4-digit 7-segment display will show time and the LCD will start on the menu screen. The menu screen has three options, Set Alarm, See Alarm, and Unlock. Turning the rotary pulse generator clockwise will scroll down, and counter-clockwise will scroll up. The selected option will be highlighted in blue.  
 
-![IMG_5524](https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/4ceff521-ff31-4a29-8a5b-6a657ae15eaf)
+<img width="620" alt="Screen Shot 2023-12-08 at 1 51 08 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/ba50e1da-4785-41b1-ac70-076873aec259">
 
 If the user clicks down on the rotary pulse generator when selecting Set Alarm, they will be prompted to set an alarm. The first step is to set the time of the alarm, beginning with the hours. The user can cycle through 1-12 hours alternatiung between AM and PM. After clicking on the RPG after setting the desire hour, the user can the switch the minute selected by again spinning the RPG. Clicking again will bring the suer to the sounds configuration page.  
 
-<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/039704f6-387c-41f2-906f-59ed674ddecc">
+<img width="613" alt="Screen Shot 2023-12-08 at 1 51 50 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/263df5d0-f03b-4b54-b5fe-88f05e363a97">
 
 For the sounds configuration page, there are again three options that can be selected the same way. The BEEP option plays a simple tone that beeps for two seconds and waits for one second on repeat. The BIRDS option plays a .wav file of birds chirping. The CUSTOM option prompts the user to speak or sing into the microphone on the top of the box with a countdown for how much recording time is remaining. This recorded audio is what will be played if CUSTOM is selected. After a sound is selected, the user can choose what color they want displayted by the high power RGB LED on top of the alarm clock.  
 
-<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/eef901f7-c0fc-43be-b4c6-719ffbe76a86">
+<img width="594" alt="Screen Shot 2023-12-08 at 1 52 02 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/7d234907-ef76-48e1-bd57-3316aa616c0e">
 
 To set the color, start turing the RPG clockwise. A blue box will start appearing on the screen, which indicates the blue level desired from the LED. Once the user has decided they want that level, they can click the RPG to switch to modifying green, and the square will update to show what the color will look like with the added green. This is repeated for red, and once complete means that the alarm is set, and will deafult to being on. 
 
-<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/f2b4a4c6-52ad-4968-a443-ecc1e16d7fe7">
+<img width="619" alt="Screen Shot 2023-12-08 at 1 52 15 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/98409402-104c-49ef-b4af-b98461cf22ba">
 
 If the user decides to click on See Alarm from the main menu, they will be brought a screen where they can scroll through all alarms swet using the RPG, with the final option being a return to main menu. These screens show all of the chosen values for each alarm, and clicking the RPG pushbutton while on an alarm in this screen will toggle the alarm on and off.  
 
-<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/5ec8b06a-31c7-4e53-bfaa-e4c599411df6">
+<img width="572" alt="Screen Shot 2023-12-08 at 1 52 26 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/19abc4d5-ece8-4a85-9e3c-ef9e5bac1fac">
 
 The final option from the main menu is unlock, which is used when the user had their phone locked in the drawer in the box. This is to be used in case of emergency, but the user can scroll through digits 0-9 using the RPG and click the button to enter their four digit password, and a correct entry will unlock the drawer in teh back using a servo. A back arrow can be used to return to the main menu. The other way to unlock the drawer in the back is to click the RPG pushbutton when an alarm is sounding to turn the alarm  off, which will also unlock ther servo. 
 
-<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/fc8fe0e4-fcc4-4cdc-ae8e-6ec7ec18ed85">
+<img width="604" alt="Screen Shot 2023-12-08 at 1 52 46 PM" src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/209d4543-71f7-49fd-b966-043ef1d0bbed">
 
 When the user is on the main menu page and has not pressed the button in 20 seconds, the LCD will enter a rest mode. A light sensor on the top measures the ambient light level, and if there is significant light the LCD displays the pictures from the uSD card, switching the picture every 60 seconds. If the light level is low, the LCD displays a dim picture of a moon. 
 
