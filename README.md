@@ -29,7 +29,7 @@ Another thing up to the user are the pictures, sounds, and passwords used by the
 The user should also configure the code in mbed2/main.cpp function setup() to connect to the internet through their phone hotspot by changing the code starting at line 187 to include their network name and password.
 After the setup is done, the Smart Alarm Clock is ready to be used. Upon starting, the two mbeds will boot up and start initializing hardware and network connections. Once these are initialized, the 4-digit 7-segment display will show time and the LCD will start on the menu screen. The menu screen has three options, Set Alarm, See Alarm, and Unlock. Turning the rotary pulse generator clockwise will scroll down, and counter-clockwise will scroll up. The selected option will be highlighted in blue.  
 
-<img src="https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/0b416f12-419b-4ac8-821f-00237a7517fd">
+![IMG_5524](https://github.com/ccarpenter38/Smart-Alarm-Clock/assets/143563695/4ceff521-ff31-4a29-8a5b-6a657ae15eaf)
 
 If the user clicks down on the rotary pulse generator when selecting Set Alarm, they will be prompted to set an alarm. The first step is to set the time of the alarm, beginning with the hours. The user can cycle through 1-12 hours alternatiung between AM and PM. After clicking on the RPG after setting the desire hour, the user can the switch the minute selected by again spinning the RPG. Clicking again will bring the suer to the sounds configuration page.  
 
