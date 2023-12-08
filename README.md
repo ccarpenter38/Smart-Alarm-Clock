@@ -4,7 +4,7 @@
 [Project Idea](https://github.com/ccarpenter38/Smart-Alarm-Clock?tab=readme-ov-file#project-idea)  
 [Parts List](https://github.com/ccarpenter38/Smart-Alarm-Clock?tab=readme-ov-file#parts-list)  
 [Instructions](https://github.com/ccarpenter38/Smart-Alarm-Clock?tab=readme-ov-file#instructions)  
-[Code](https://github.com/ccarpenter38/Smart-Alarm-Clock?tab=readme-ov-file#instructions)  
+[Code](https://github.com/ccarpenter38/Smart-Alarm-Clock?tab=readme-ov-file#code) 
 [Hardware Setups](https://github.com/ccarpenter38/Smart-Alarm-Clock?tab=readme-ov-file#hardware-setups)  
 [Demo Video](https://github.com/ccarpenter38/Smart-Alarm-Clock?tab=readme-ov-file#demo-videos)
 ## Project Idea
